@@ -275,6 +275,7 @@ fun! s:CloseIt()
         elseif s:FindTag()
             if b:closetag_firstWasEndTag == 0
                 exe "silent normal! /\\(=\\)\\@<!>\<Cr>"
+                exe "silent normal! /poiqwepoiqwepoi"
                 if b:closetag_html_mode && s:AsEmpty()
                     if b:closetag_haveAtt == 0
                         call s:Handler(b:closetag_tagName, b:closetag_html_mode)
